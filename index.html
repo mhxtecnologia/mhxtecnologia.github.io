@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currículo - MATHEUS HENRIQUE GARCIA DA COSTA</title>
+    <style>
+      @page {
+        size: letter portrait;
+        margin: 0.5in;
+      }
+
+      /* Estilo global - ATS-friendly */
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.4;
+        color: #000;
+        max-width: 8.5in;
+        margin: 0 auto;
+        padding: 0.5in;
+        font-size: 11pt;
+      }
+
+      /* Cabeçalho simplificado para ATS */
+      .header {
+        text-align: left;
+        margin-bottom: 20px;
+      }
+
+      .header h1 {
+        color: #2ca186;
+        margin: 0 0 5px 0;
+        font-size: 22pt;
+        font-weight: bold;
+      }
+
+      .header h2 {
+        color: #2ca186;
+        margin: 0 0 10px 0;
+        font-size: 14pt;
+        font-weight: normal;
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+      }
+
+      .contact-info {
+        margin-top: 10px;
+        margin-left: 5%;
+        margin-bottom: 15px;
+        line-height: 1.8;
+      }
+
+      .photo {
+        width: 170px;
+        height: 170px;
+        border: 4px solid #2ca186;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+
+      .photo img {
+        width: 170px;
+      }
+
+      /* Títulos de seção em caixa alta para melhor reconhecimento ATS */
+      h3 {
+        color: #000;
+        margin: 20px 0 10px 0;
+        font-size: 14pt;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-bottom: 2px solid #000;
+        padding-bottom: 5px;
+      }
+
+      .section {
+        margin-bottom: 20px;
+      }
+
+      /* Experiência profissional */
+      .job {
+        margin-bottom: 20px;
+      }
+
+      .job-title {
+        font-weight: bold;
+        font-size: 12pt;
+        margin: 0 0 5px 0;
+      }
+
+      .job-company {
+        font-weight: bold;
+        font-size: 11pt;
+        margin: 0;
+      }
+
+      .job-location {
+        font-style: italic;
+        margin: 0;
+      }
+
+      .job-duration {
+        font-weight: bold;
+        margin: 5px 0;
+      }
+
+      /* Listas otimizadas para ATS */
+      ul {
+        padding-left: 20px;
+        margin: 10px 0;
+      }
+
+      li {
+        margin-bottom: 5px;
+        line-height: 1.5;
+      }
+
+      /* Links simples */
+      a {
+        color: #000;
+        text-decoration: underline;
+      }
+
+      /* Seção de habilidades em lista simples para ATS */
+      .skills-section {
+        margin-bottom: 15px;
+      }
+
+      .skills-category {
+        margin-bottom: 10px;
+      }
+
+      .skills-category strong {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      /* Formatação simples para melhor leitura ATS */
+      p {
+        margin: 10px 0;
+        text-align: left;
+      }
+
+      /* Remove formatação complexa que pode confundir ATS */
+      .highlight {
+        font-weight: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Cabeçalho com informações de contato -->
+    <div class="header">
+      <h1>MATHEUS HENRIQUE GARCIA DA COSTA</h1>
+      <h2>
+        Desenvolvedor Full Stack Sênior | Node | React | Tpescript | Rust |
+        Python
+      </h2>
+
+      <div class="container">
+        <div class="photo">
+          <img src="photo.jpg" alt="" />
+        </div>
+
+        <div class="contact-info">
+          <strong>Localização:</strong> Sertãozinho, São Paulo, Brasil<br />
+          <strong>Data de Nascimento:</strong> 26/04/1993<br />
+          <strong>Telefone:</strong> +55 (16) 99769-5718<br />
+          <strong>E-mail:</strong> contato@matheus.site<br />
+          <strong>LinkedIn:</strong> linkedin.com/in/mhxx<br />
+          <strong>GitHub:</strong> github.com/mhxtecnologia
+        </div>
+      </div>
+    </div>
+
+    <!-- Seção de resumo -->
+    <div class="section">
+      <h3>RESUMO PROFISSIONAL</h3>
+      <p>
+        Desenvolvedor Full Stack com mais de 13 anos de experiência na
+        construção de aplicações de alto desempenho utilizando ecossistemas
+        Node.js, React.js, Rust, Python. Especializado em projetar e implementar
+        arquiteturas de microsserviços e monolíticas com domínio em bancos de
+        dados SQL/NoSQL. Experiência significativa em sistemas de sustentação,
+        atuando como 'bombeiro da semana' em esquema de rodízio para garantir a
+        estabilidade de sistemas críticos. Histórico comprovado em sistemas
+        financeiros, soluções para equipamentos industriais e marketing
+        empresarial, sempre primando por produzir código limpo seguindo
+        princípios SOLID e Clean Architecture. Atualmente concluindo Psicanálise
+        pela Anhanguera.
+      </p>
+    </div>
+
+    <!-- Seção de habilidades técnicas -->
+    <div class="section">
+      <h3>HABILIDADES TÉCNICAS</h3>
+
+      <div class="skills-section">
+        <div class="skills-category">
+          <strong>Linguagens de Programação:</strong>
+          NodeJS, ReactJS, TypeScript, JavaScript, PHP, Rust, Python
+        </div>
+
+        <div class="skills-category">
+          <strong>Frameworks e Bibliotecas Backend:</strong>
+          NestJS, NextJS, Express, Fastify, Prisma, Sequelize, Mongoose, Laravel
+        </div>
+
+        <div class="skills-category">
+          <strong>Frameworks e Bibliotecas Frontend:</strong>
+          React.js, React Native, React Hooks, React Router, Redux, Bootstrap,
+          Webpack
+        </div>
+
+        <div class="skills-category">
+          <strong>Bancos de Dados:</strong>
+          PostgreSQL, MySQL, MongoDB, Oracle Database, Elasticsearch, Data Lake,
+          ETL, Pipeline de Dados
+        </div>
+
+        <div class="skills-category">
+          <strong>Cloud e DevOps:</strong>
+          AWS (EC2, S3, RDS), Docker, Kubernetes, GitLab CI/CD, Jenkins, ArgoCD,
+          Git, GitHub, SVN, Linux
+        </div>
+
+        <div class="skills-category">
+          <strong>Arquitetura e APIs:</strong>
+          Microsserviços, Arquitetura Monolítica, APIs RESTful, API Gateway,
+          Swagger, Apigee, JWT, Keycloak, LDAP, RabbitMQ
+        </div>
+
+        <div class="skills-category">
+          <strong>Ferramentas e Testes:</strong>
+          JUnit, Jest, React Testing Library (RTL), Selenium, TDD, SonarQube,
+          Grafana, Postman, Insomnia, Rapid7
+        </div>
+
+        <br /><br />
+
+        <div class="skills-category">
+          <strong>Data e Analytics:</strong>
+          Apache Airflow, Apache Spark, Python para Análise de Dados, Machine
+          Learning, Modelagem de Dados, Otimização de Consultas
+        </div>
+
+        <div class="skills-category">
+          <strong>Metodologias:</strong>
+          Agile, Scrum, Kanban, POO, SOLID, Clean Code, TDD, Planejamento de
+          Sprint, Jira
+        </div>
+      </div>
+    </div>
+
+    <!-- Seção de habilidades interpessoais -->
+    <div class="section">
+      <h3>HABILIDADES INTERPESSOAIS</h3>
+      <ul>
+        <li>
+          <strong>Resolução de Problemas:</strong> Experiência comprovada como
+          'bombeiro da semana' resolvendo incidentes críticos em produção
+        </li>
+        <li>
+          <strong>Capacidade de Adaptação:</strong> Transição eficaz entre
+          diferentes tecnologias e domínios de negócio
+        </li>
+        <li>
+          <strong>Capacidade de Análise:</strong> Forte habilidade em analisar
+          sistemas complexos e identificar soluções otimizadas
+        </li>
+        <li>
+          <strong>Aprendizado Rápido:</strong> Histórico de dominar novas
+          tecnologias e frameworks rapidamente
+        </li>
+        <li>
+          <strong>Trabalho em Equipe:</strong> Colaboração efetiva em equipes
+          multidisciplinares usando metodologias ágeis
+        </li>
+        <li>
+          <strong>Foco em Resultado:</strong> Entrega consistente de projetos
+          dentro do prazo e com alta qualidade
+        </li>
+        <li>
+          <strong>Foco no Cliente:</strong> Desenvolvimento de soluções
+          alinhadas às necessidades do negócio
+        </li>
+        <li>
+          <strong>Organização:</strong> Gestão eficiente de múltiplas tarefas e
+          prioridades
+        </li>
+        <li>
+          <strong>Solidariedade:</strong> Mentoria e suporte proativo aos
+          colegas de equipe
+        </li>
+        <li>
+          <strong>Comunicação:</strong> Comunicação clara em documentação
+          técnica e reuniões de equipe
+        </li>
+        <li>
+          <strong>Gerenciamento do Tempo:</strong> Balanceamento eficaz entre
+          desenvolvimento, suporte e estudos
+        </li>
+        <li>
+          <strong>Inteligência Emocional:</strong> Gestão adequada de situações
+          de pressão e prazos apertados
+        </li>
+        <li>
+          <strong>Flexibilidade:</strong> Adaptação a mudanças de requisitos e
+          prioridades
+        </li>
+        <li>
+          <strong>Pensamento Crítico:</strong> Capacidade de avaliar soluções e
+          tomar decisões técnicas fundamentadas
+        </li>
+        <li>
+          <strong>Proatividade:</strong> Iniciativa para identificar e resolver
+          problemas antes que se tornem críticos
+        </li>
+      </ul>
+    </div>
+
+    <!-- Experiência Profissional -->
+    <div class="section">
+      <h3>EXPERIÊNCIA PROFISSIONAL</h3>
+
+      <div class="job">
+        <p class="job-title">Desenvolvedor Fullstack Sênior</p>
+        <p class="job-company">CD2 Equipamentos Industriais</p>
+        <p class="job-location">Sertãozinho, São Paulo, Brasil</p>
+        <p class="job-duration">
+          Fevereiro 2024 - Junho 2025 (1 ano e 5 meses)
+        </p>
+        <ul>
+          <li>
+            Atuei no desenvolvimento inicial da plataforma ERP da empresa com
+            NestJs, autenticações seguras com JWT, interfaces de usuário com
+            formulários dinâmicos e intuitivos com Nextjs, implementei módulos
+            para controle de entrada e saída de ferramentas no almoxarifado,
+            gestão de funcionários (RH) e inspeção de equipamentos industriais
+            com registro fotográfico e características técnicas. Desenvolvi
+            também o aplicativo de simulação do funcionamento e desempenho do
+            principal produto da empresa — a centrífuga industrial 'CDX', com
+            React Native. Além disso, implementei um agente de IA, utilizando a
+            tecnologia Ollama, para avaliar a performance operacional dos
+            sistemas.
+          </li>
+          <li>
+            Stack tecnológico: React, React Native, Next.js, Node.js, Nestjs
+            PostgreSQL, Python, AgentIA, Rust
+          </li>
+        </ul>
+      </div>
+
+      <br /><br />
+
+      <div class="job">
+        <p class="job-title">Desenvolvedor Fullstack Sênior</p>
+        <p class="job-company">Meu Pet Club</p>
+        <p class="job-location">Curitiba, Brasil</p>
+        <p class="job-duration">
+          Agosto 2021 - Fevereiro 2023 (1 ano e 7 meses)
+        </p>
+        <ul>
+          <li>
+            Primeiro desenvolvedor contratado da empresa responsável por
+            estruturar uma fintech voltada a planos de saúde para animais
+            domésticos. Atuei no desenvolvimento inicial da plataforma,
+            incluindo integração com múltiplos meios de cobrança, métodos de
+            pagamento e sistema de reembolso.
+          </li>
+          <li>
+            Stack tecnológico: React, NextJs, NodeJs, Express, MongoDB,
+            Mongoose, Redis, Integração Contínua, Gateway de Pagamento,
+            PagSeguro, Pagar.me, Iugu, Vindi
+          </li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <p class="job-title">Desenvolvedor Fullstack Pleno</p>
+        <p class="job-company">RGB Comunicação</p>
+        <p class="job-location">Sertãozinho, São Paulo, Brasil</p>
+        <p class="job-duration">Dezembro 2018 - Dezembro 2019 (1 ano)</p>
+        <ul>
+          <li>
+            Atuei na manutenção e desenvolvimento de diversos sites e sistemas
+            entre 2010 e 2018, participando de um sistema de rodízio técnico com
+            prazos definidos, assumindo a função de 'bombeiro da semana' para
+            resolver demandas urgentes e garantir entregas no prazo.
+          </li>
+          <li>
+            Stack tecnológico: PHP, JQuery, MySQL, SASS, SCSS, GIT, HTML5, CSS3,
+            JavaScript, RTL, Design Responsivo
+          </li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <p class="job-title">Desenvolvedor Front-end Junior</p>
+        <p class="job-company">Ribsite Serviços de internet LTDA</p>
+        <p class="job-location">Sertãozinho, São Paulo, Brasil</p>
+        <p class="job-duration">Janeiro 2013 - Junho 2014 (1 ano e 6 meses)</p>
+        <ul>
+          <li>
+            Desenvolvi e publiquei sites institucionais e promocionais para
+            empresas locais, com foco em apresentar serviços, impulsionar a
+            presença digital e fortalecer os negócios da região.
+          </li>
+          <li>
+            Stack tecnológico: HTML5, CSS3, JavaScript, PHP, JQuery, MySQL
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Idiomas -->
+    <div class="section">
+      <h3>IDIOMAS</h3>
+      <ul>
+        <li><strong>Português:</strong> Nativo</li>
+        <li><strong>Inglês:</strong> Básico - Leitura e Escrita.</li>
+      </ul>
+    </div>
+  </body>
+</html>
