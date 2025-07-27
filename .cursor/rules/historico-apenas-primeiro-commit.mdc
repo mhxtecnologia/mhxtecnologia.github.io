@@ -1,0 +1,19 @@
+---
+description: Manter este site com apenas o commit raiz no histórico do Git
+alwaysApply: true
+---
+
+# Histórico de commit único
+
+Este repositório deve manter somente um commit no histórico: o commit raiz já
+existente como primeiro commit do projeto.
+
+- Nunca crie um novo commit normal neste repositório.
+- Ao precisar registrar alterações, incorpore-as ao commit raiz por reescrita
+  local do histórico.
+- Antes de publicar a alteração, confirme que `git log --oneline` exibe apenas
+  uma entrada.
+- A publicação do histórico reescrito exige `git push --force-with-lease` para
+  `main`; não use `--force` sem necessidade.
+- Preserve a árvore completa do projeto e a mensagem do commit raiz, salvo
+  instrução explícita em contrário.

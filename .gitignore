@@ -1,0 +1,3 @@
+# Ignora arquivos PDF (ex.: currículo gerado localmente)
+*.pdf
+*.PDF
