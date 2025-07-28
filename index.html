@@ -44,6 +44,17 @@
       .container {
         display: flex;
         align-items: center;
+        flex-direction: row;
+      }
+
+      @media (max-width: 320px) {
+        body {
+          padding: 48px 30px 48px 30px;
+        }
+
+        .container {
+          flex-direction: column;
+        }
       }
 
       .contact-info {
@@ -155,7 +166,7 @@
     <div class="header">
       <h1>MATHEUS HENRIQUE GARCIA DA COSTA</h1>
       <h2>
-        Desenvolvedor Full Stack Sênior | Node | React | Tpescript | Rust |
+        Desenvolvedor Full Stack Sênior | Node | React | Typescript | Rust |
         Python
       </h2>
 
