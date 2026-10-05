@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Matheus Takeuchi — Desenvolvedor Full Stack Sênior (React, Node.js,
+      TypeScript)
+    </title>
+    <!-- Resumo exibido pelo Google e por agregadores de vagas -->
+    <meta
+      name="description"
+      content="Matheus Henrique Takeuchi — Desenvolvedor Full Stack Sênior com mais de 13 anos de experiência em React, Next.js, Node.js, NestJS e TypeScript. Microsserviços, PostgreSQL, Cloud (AWS e GCP), Docker e Kubernetes."
+    />
+    <meta name="author" content="Matheus Henrique Takeuchi" />
+    <link rel="canonical" href="https://mhxtecnologia.github.io/" />
+    <!-- Open Graph: prévia com foto e título quando o link é colado no LinkedIn, WhatsApp etc. -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:url" content="https://mhxtecnologia.github.io/" />
+    <meta
+      property="og:title"
+      content="Matheus Takeuchi — Desenvolvedor Full Stack Sênior"
+    />
+    <meta
+      property="og:description"
+      content="13+ anos com React, Next.js, Node.js, NestJS e TypeScript. Microsserviços, PostgreSQL, AWS, Google Cloud, Docker e Kubernetes."
+    />
+    <meta
+      property="og:image"
+      content="https://mhxtecnologia.github.io/photo.jpg"
+    />
+    <meta property="profile:first_name" content="Matheus" />
+    <meta property="profile:last_name" content="Takeuchi" />
+    <meta name="twitter:card" content="summary" />
+    <!-- Dados estruturados (schema.org/Person) para buscadores e bots de recrutamento -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Matheus Henrique Takeuchi",
+        "jobTitle": "Desenvolvedor Full Stack Sênior",
+        "description": "Desenvolvedor Full Stack Sênior especializado em React, Next.js, Node.js, NestJS e TypeScript, com experiência em microsserviços, cloud e sistemas de pagamento.",
+        "url": "https://mhxtecnologia.github.io/",
+        "image": "https://mhxtecnologia.github.io/photo.jpg",
+        "email": "mailto:contato@matheus.site",
+        "telephone": "+55-16-99769-5718",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Sertãozinho",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        },
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "name": "Anhanguera"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/matheustakeuchi",
+          "https://github.com/mhxtecnologia"
+        ],
+        "knowsLanguage": ["pt-BR", "en"],
+        "knowsAbout": [
+          "React",
+          "Next.js",
+          "Node.js",
+          "NestJS",
+          "TypeScript",
+          "JavaScript",
+          "React Native",
+          "PostgreSQL",
+          "MongoDB",
+          "Redis",
+          "AWS",
+          "Google Cloud Platform",
+          "Docker",
+          "Kubernetes",
+          "CI/CD",
+          "Microsserviços",
+          "APIs RESTful",
+          "GraphQL",
+          "RabbitMQ",
+          "Angular",
+          "Rust",
+          "Python",
+          "PHP",
+          "Agentes de IA",
+          "LLM",
+          "Clean Architecture",
+          "SOLID",
+          "Scrum",
+          "Resolução de Problemas",
+          "Gestão de Incidentes",
+          "Comunicação",
+          "Trabalho em Equipe",
+          "Mentoria"
+        ]
+      }
+    </script>
+    <!-- Fonte Inter: sans-serif pensada para leitura em tela, com fallback seguro para ATS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", "Segoe UI", Roboto, Arial, Helvetica, sans-serif;
+        line-height: 1.5;
+        color: #000;
+        margin: 0 auto;
+        padding: 20px 30px;
+        /* 12pt (16px) na tela: tamanho recomendado para leitura em navegador e celular */
+        font-size: 12pt;
+      }
+
+      /* Cabeçalho simplificado para ATS */
+      .header {
+        text-align: left;
+        margin-bottom: 20px;
+      }
+
+      .header h1 {
+        color: #000;
+        margin: 0 0 5px 0;
+        font-size: 22pt;
+        font-weight: bold;
+      }
+
+      .header h2 {
+        color: #333;
+        margin: 0 0 10px 0;
+        font-size: 14pt;
+        font-weight: normal;
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      @media (min-width: 769px) {
+        body {
+          max-width: 8.5in;
+          padding: 48px;
+        }
+
+        .container {
+          flex-direction: row;
+        }
+      }
+
+      .contact-info {
+        margin-top: 10px;
+        margin-left: 5%;
+        margin-bottom: 15px;
+        line-height: 1.8;
+      }
+
+      .photo {
+        width: 170px;
+        height: 170px;
+        /* Azul do LinkedIn, com um anel claro do mesmo tom por fora para dar profundidade */
+        border: 4px solid #0a66c2;
+        box-shadow: 0 0 0 4px #d6e6f7;
+        /* Quadrado com cantos arredondados, em vez de círculo */
+        border-radius: 24px;
+        overflow: hidden;
+      }
+
+      .photo img {
+        width: 170px;
+        height: 170px;
+      }
+
+      /* Botão que abre a impressão do navegador, de onde o recrutador salva o PDF */
+      .print-button {
+        margin-top: 8px;
+        padding: 6px 14px;
+        font: inherit;
+        font-size: 11pt;
+        color: #fff;
+        background: #0a66c2;
+        border: 0;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+
+      .print-button:hover {
+        background: #004182;
+      }
+
+      /* Títulos de seção em caixa alta para melhor reconhecimento ATS */
+      h3 {
+        color: #000;
+        margin: 20px 0 10px 0;
+        font-size: 14pt;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-bottom: 2px solid #000;
+        padding-bottom: 5px;
+      }
+
+      .section {
+        margin-bottom: 20px;
+      }
+
+      /* Experiência profissional */
+      .job {
+        margin-bottom: 20px;
+      }
+
+      .job-title {
+        font-weight: bold;
+        font-size: 13pt;
+        margin: 0 0 5px 0;
+      }
+
+      .job-company {
+        font-weight: bold;
+        font-size: 12pt;
+        margin: 0;
+      }
+
+      .job-location {
+        font-style: italic;
+        margin: 0;
+      }
+
+      .job-duration {
+        font-weight: bold;
+        margin: 5px 0;
+      }
+
+      /* Linha de tecnologias de cada experiência, fora da lista de realizações */
+      .job-tech {
+        margin: 6px 0 0 0;
+      }
+
+      /* Listas otimizadas para ATS */
+      ul {
+        padding-left: 20px;
+        margin: 10px 0;
+      }
+
+      li {
+        margin-bottom: 5px;
+        line-height: 1.5;
+      }
+
+      /* Links simples */
+      a {
+        color: #000;
+        text-decoration: underline;
+      }
+
+      /* Seção de habilidades em lista simples para ATS */
+      .skills-section {
+        margin-bottom: 15px;
+      }
+
+      .skills-category {
+        margin-bottom: 10px;
+      }
+
+      .skills-category strong {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      /* Formatação simples para melhor leitura ATS */
+      p {
+        margin: 10px 0;
+        text-align: left;
+      }
+
+      /* Remove formatação complexa que pode confundir ATS */
+      .highlight {
+        font-weight: normal;
+      }
+
+      /* Na impressão/PDF volta ao 11pt, padrão de currículo, para não aumentar o número de páginas */
+      /* Página A4 sem margem própria: a opção "Margens" do Chrome (Nenhumas/Predefinidas)
+         não interfere mais, e sem margem o navegador não imprime cabeçalho/rodapé */
+      @page {
+        size: A4;
+        margin: 0;
+      }
+
+      @media print {
+        body {
+          font-size: 10pt;
+          line-height: 1.3;
+          max-width: none;
+          /* A margem vira padding do body; o clone repete o padding no topo e na base de cada página */
+          padding: 10mm 13mm;
+          -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+
+        /* A largura útil do A4 cai abaixo do breakpoint; força foto ao lado dos contatos */
+        .container {
+          flex-direction: row;
+        }
+
+        .photo,
+        .photo img {
+          width: 105px;
+          height: 105px;
+        }
+
+        .contact-info {
+          margin-top: 0;
+          margin-bottom: 0;
+          line-height: 1.6;
+        }
+
+        /* O botão só faz sentido na tela */
+        .print-button {
+          display: none;
+        }
+
+        .header h1 {
+          font-size: 20pt;
+        }
+
+        .header h2 {
+          font-size: 12pt;
+        }
+
+        h3 {
+          font-size: 12pt;
+          margin: 8px 0 5px 0;
+          padding-bottom: 2px;
+          /* Título nunca fica sozinho no fim da página */
+          break-after: avoid;
+        }
+
+        .header {
+          margin-bottom: 8px;
+        }
+
+        .section {
+          margin-bottom: 8px;
+        }
+
+        .job {
+          margin-bottom: 10px;
+        }
+
+        .job-title {
+          font-size: 11pt;
+          margin-bottom: 2px;
+          break-after: avoid;
+        }
+
+        .job-company,
+        .job-location,
+        .job-duration {
+          font-size: 10pt;
+          break-after: avoid;
+        }
+
+        /* No papel, empresa · local · período ficam numa linha só para economizar espaço */
+        .job-company,
+        .job-location,
+        .job-duration {
+          display: inline;
+          margin: 0;
+        }
+
+        .job-company::after,
+        .job-location::after {
+          content: " · ";
+          font-style: normal;
+          font-weight: normal;
+        }
+
+        /* Cabeçalho do emprego nunca fica sozinho no fim da página, separado das realizações */
+        .job ul {
+          margin-top: 2px;
+          break-before: avoid;
+        }
+
+        ul {
+          margin: 4px 0;
+        }
+
+        .job-tech {
+          font-size: 9.5pt;
+          margin-top: 3px;
+        }
+
+        /* No papel, o nome da categoria fica na mesma linha das habilidades */
+        .skills-category {
+          margin-bottom: 4px;
+        }
+
+        .skills-category strong {
+          display: inline;
+        }
+
+        /* Evita cortar um item de lista ou categoria no meio entre páginas */
+        li,
+        .skills-category,
+        .job-tech {
+          break-inside: avoid;
+        }
+
+        p {
+          margin: 6px 0;
+        }
+
+        li {
+          margin-bottom: 1px;
+        }
+
+        a {
+          text-decoration: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Cabeçalho com informações de contato -->
+    <div class="header">
+      <h1>MATHEUS HENRIQUE TAKEUCHI</h1>
+      <h2>
+        Desenvolvedor Full Stack Sênior | React | Node.js | TypeScript |
+        Next.js | NestJS
+      </h2>
+
+      <div class="container">
+        <div class="photo">
+          <img src="photo.jpg" alt="" />
+        </div>
+
+        <div class="contact-info">
+          <strong>Localização:</strong> Sertãozinho, São Paulo, Brasil
+          (disponível para remoto)<br />
+          <strong>Celular/WhatsApp:</strong>
+          <!-- wa.me abre o WhatsApp Web no computador e o app no celular, já com a mensagem preenchida -->
+          <a
+            href="https://wa.me/5516997695718?text=Ol%C3%A1%2C%20Matheus!%20Vi%20seu%20curr%C3%ADculo%20e%20gostaria%20de%20conversar%20sobre%20uma%20oportunidade%20de%20trabalho."
+            target="_blank"
+            rel="noopener noreferrer"
+            >+55 (16) 99769-5718</a
+          ><br />
+          <strong>E-mail:</strong>
+          <a href="mailto:contato@matheus.site">contato@matheus.site</a><br />
+          <strong>LinkedIn:</strong>
+          <a
+            href="https://www.linkedin.com/in/matheustakeuchi"
+            target="_blank"
+            rel="noopener noreferrer"
+            >linkedin.com/in/matheustakeuchi</a
+          ><br />
+          <strong>GitHub:</strong>
+          <a
+            href="https://github.com/mhxtecnologia"
+            target="_blank"
+            rel="noopener noreferrer"
+            >github.com/mhxtecnologia</a
+          ><br />
+          <button type="button" class="print-button" onclick="window.print()">
+            Salvar em PDF
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seção de resumo -->
+    <div class="section">
+      <h3>RESUMO PROFISSIONAL</h3>
+      <p>
+        <strong>Desenvolvedor Full Stack Sênior</strong> com
+        <strong>13+ anos de experiência</strong> construindo aplicações web,
+        mobile e APIs com <strong>React, Next.js, Node.js, NestJS e
+        TypeScript</strong>. Atuo de ponta a ponta: da arquitetura
+        (microsserviços, DDD, CQRS e sistemas orientados a eventos) à
+        modelagem de dados em <strong>PostgreSQL, MongoDB e Redis</strong>, até
+        o deploy em <strong>AWS e Google Cloud</strong> com Docker, Kubernetes e
+        CI/CD. Estruturei do zero a plataforma de uma fintech de pagamentos
+        recorrentes e um ERP industrial usado por cerca de 100 colaboradores.
+        Experiência em <strong>war rooms</strong> de entregas críticas com
+        prazo apertado e na <strong>resposta a incidentes</strong> em produção,
+        sempre com código limpo, <strong>SOLID e Clean Architecture</strong>.
+      </p>
+    </div>
+
+    <!-- Resumo da stack-alvo logo no topo: é o que o recrutador e o ATS procuram primeiro -->
+    <div class="section">
+      <h3>COMPETÊNCIAS PRINCIPAIS</h3>
+      <p>
+        React, Next.js, Node.js, NestJS, TypeScript, JavaScript, PostgreSQL,
+        MongoDB, Redis, APIs RESTful, GraphQL, Microsserviços, Docker,
+        Kubernetes, AWS, Google Cloud, CI/CD, Testes Automatizados (Jest,
+        Vitest, Testing Library, Cypress)
+      </p>
+    </div>
+
+    <!-- Experiência Profissional: vem antes da lista completa de habilidades -->
+    <div class="section">
+      <h3>EXPERIÊNCIA PROFISSIONAL</h3>
+
+      <div class="job">
+        <p class="job-title">Desenvolvedor Full Stack Sênior</p>
+        <p class="job-company">AutoAvaliar</p>
+        <p class="job-location">Remoto</p>
+        <p class="job-duration">09/2025 – 09/2026 (1 ano)</p>
+        <ul>
+          <li>
+            Atuei no Auto Sync, produto que publica com um clique o estoque de
+            veículos de revendas, concessionárias, locadoras e frotistas nos
+            principais marketplaces automotivos.
+          </li>
+          <li>
+            Desenvolvi serviços em Node.js e TypeScript, modelados com DDD e
+            CQRS, para sincronizar anúncios, fotos e características dos
+            veículos entre o estoque e os portais, eliminando o cadastro manual
+            repetido em cada plataforma.
+          </li>
+          <li>
+            Implementei processamento assíncrono orientado a eventos com Google
+            Cloud Pub/Sub e Cloud Functions, com persistência no Datastore e
+            Firestore e sincronizações periódicas via Cloud Scheduler.
+          </li>
+          <li>
+            Publiquei os serviços em containers Docker no Cloud Run e no GKE
+            (Kubernetes), com build e deploy automatizados via Cloud Build e
+            GitHub Actions.
+          </li>
+          <li>
+            Garanti a qualidade com testes unitários em Jest e testes
+            end-to-end com Selenium, e monitorei as integrações com Cloud
+            Logging, Cloud Monitoring e análises no BigQuery.
+          </li>
+          <li>
+            Integrei war rooms com produto, QA e engenharia em entregas
+            críticas de prazo apertado, priorizando correções, acompanhando o
+            deploy em produção e garantindo o lançamento na data combinada.
+          </li>
+          <li>
+            Desenvolvi interfaces em Angular com Angular Material para gestão
+            dos anúncios e das integrações com os portais.
+          </li>
+        </ul>
+        <p class="job-tech">
+          <strong>Tecnologias:</strong> Node.js, TypeScript, Angular, Angular
+          Material, DDD, CQRS, Google Cloud Platform (GCP), Pub/Sub, Cloud
+          Functions, Cloud Run, GKE, Kubernetes, Datastore, Firestore, Cloud
+          Storage, BigQuery, Cloud Build, Cloud Logging, Cloud Monitoring, Cloud
+          Scheduler, Docker, GitHub Actions, CI/CD, Jest, Selenium, Arquitetura
+          Orientada a Eventos, Mensageria, Integração com Marketplaces
+        </p>
+      </div>
+
+      <div class="job">
+        <p class="job-title">Desenvolvedor Full Stack Sênior</p>
+        <p class="job-company">CD2 Equipamentos Industriais</p>
+        <p class="job-location">Sertãozinho, São Paulo, Brasil</p>
+        <p class="job-duration">02/2024 – 06/2025 (1 ano e 5 meses)</p>
+        <ul>
+          <li>
+            Estruturei do zero a plataforma ERP da empresa, usada por cerca de
+            100 colaboradores, com API REST em NestJS e TypeScript documentada
+            com Swagger/OpenAPI, banco PostgreSQL (Prisma, TypeORM e
+            Sequelize) e autenticação segura com JWT.
+          </li>
+          <li>
+            Desenvolvi interfaces em Next.js (App Router e Server Components) e
+            React, com Tailwind CSS, shadcn/ui, React Hook Form e Zod, e
+            documentei os componentes no Storybook.
+          </li>
+          <li>
+            Implementei os módulos de almoxarifado, gestão de funcionários (RH)
+            e inspeção de equipamentos industriais, com registro fotográfico no
+            AWS S3 e ficha técnica.
+          </li>
+          <li>
+            Desenvolvi em React Native com Expo o aplicativo de simulação da
+            centrífuga industrial CDX, principal produto da empresa, e em Rust
+            aplicações desktop com Tauri e serviços com Axum.
+          </li>
+          <li>
+            Implementei um agente de IA com LLM local (Ollama e Mistral) para
+            avaliar a performance operacional dos sistemas, sem enviar dados da
+            empresa a serviços externos, em conformidade com a LGPD.
+          </li>
+          <li>
+            Hospedei a plataforma na AWS (EC2, ECS, Lambda, RDS e S3), com
+            containers Docker e deploy automatizado via GitHub Actions.
+          </li>
+          <li>
+            Garanti a qualidade com testes em Vitest, Supertest e Playwright
+            (E2E), análise estática no SonarQube e monitoramento com dashboards
+            no Grafana.
+          </li>
+          <li>
+            Conduzi war rooms com as áreas usuárias em entregas críticas de
+            prazo apertado, priorizando o essencial, corrigindo falhas em tempo
+            real e colocando os módulos em operação na data prevista.
+          </li>
+        </ul>
+        <p class="job-tech">
+          <strong>Tecnologias:</strong> TypeScript, Node.js, NestJS, REST,
+          Swagger/OpenAPI, React, Next.js, App Router, Server Components,
+          Tailwind CSS, shadcn/ui, React Hook Form, Zod, Storybook, Vitest,
+          Supertest, Playwright, SonarQube,
+          React Native, Expo, PostgreSQL, Prisma, TypeORM, Sequelize, JWT, Rust, Tauri,
+          Axum, Python, Docker, Docker Compose, AWS (EC2, ECS, Lambda, RDS, S3), Grafana, GitHub Actions,
+          CI/CD, ERP, Agentes de IA, LLM, Ollama, Mistral, GitHub Copilot,
+          Cursor
+        </p>
+      </div>
+
+      <div class="job">
+        <p class="job-title">Desenvolvedor Full Stack</p>
+        <p class="job-company">Freelancer / Autônomo</p>
+        <p class="job-location">Remoto</p>
+        <p class="job-duration">03/2023 – 01/2024 (11 meses)</p>
+        <ul>
+          <li>
+            Desenvolvimento de projetos variados sob demanda e estudos
+            contínuos de novas tecnologias (React, Next.js, Node.js, NestJS, TypeScript, PostgreSQL, Docker).
+          </li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <p class="job-title">Desenvolvedor Full Stack Sênior</p>
+        <p class="job-company">Meu Pet Club</p>
+        <p class="job-location">Curitiba, Brasil</p>
+        <p class="job-duration">08/2021 – 02/2023 (1 ano e 7 meses)</p>
+        <ul>
+          <li>
+            Primeiro desenvolvedor contratado, responsável por estruturar do
+            zero a plataforma de uma fintech de planos de saúde para pets.
+          </li>
+          <li>
+            Arquitetei e desenvolvi em TypeScript a API em Node.js e Express,
+            com APIs REST e GraphQL, MongoDB (Mongoose), Prisma e cache em
+            Redis, em arquitetura de microsserviços.
+          </li>
+          <li>
+            Desenvolvi o front-end em React e Next.js, com Redux, Tailwind CSS,
+            Material UI e Styled-components.
+          </li>
+          <li>
+            Integrei múltiplos gateways de pagamento (PagSeguro, Pagar.me, Iugu
+            e Vindi) para cobrança recorrente dos planos e Pix, com
+            confirmações via webhooks.
+          </li>
+          <li>
+            Desenvolvi o sistema de reembolso de despesas veterinárias, com
+            processamento assíncrono em filas (RabbitMQ e BullMQ).
+          </li>
+          <li>
+            Implementei autenticação com JWT e OAuth 2.0 e adequei a plataforma
+            à LGPD e ao PCI-DSS no tratamento de dados pessoais e de cartão.
+          </li>
+          <li>
+            Containerizei a aplicação com Docker, com deploy na Vercel, CI/CD
+            em GitHub Actions e testes automatizados (Jest, Testing Library e
+            Cypress).
+          </li>
+        </ul>
+        <p class="job-tech">
+          <strong>Tecnologias:</strong> TypeScript, Node.js, Express, React,
+          Next.js, Redux, Tailwind CSS, Material UI, Styled-components, REST,
+          GraphQL, MongoDB, Mongoose, Prisma, Redis, RabbitMQ, BullMQ, Microsserviços,
+          JWT, OAuth 2.0, LGPD, PCI-DSS, Docker, Vercel, CI/CD, GitHub Actions,
+          Jest, Testing Library, Cypress, Webhooks, Pix, Gateway de Pagamento,
+          Cobrança Recorrente, Fintech
+        </p>
+      </div>
+
+      <div class="job">
+        <p class="job-title">Desenvolvedor Full Stack</p>
+        <p class="job-company">Freelancer / Autônomo</p>
+        <p class="job-location">Remoto</p>
+        <p class="job-duration">01/2020 – 07/2021 (1 ano e 7 meses)</p>
+        <ul>
+          <li>
+            Desenvolvimento de projetos variados sob demanda e estudos
+            contínuos de novas tecnologias (Node.js, React, TypeScript, JavaScript, PHP, Laravel, MySQL, MongoDB).
+          </li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <p class="job-title">Desenvolvedor Full Stack Pleno</p>
+        <p class="job-company">RGB Comunicação</p>
+        <p class="job-location">Sertãozinho, São Paulo, Brasil</p>
+        <p class="job-duration">12/2018 – 12/2019 (1 ano)</p>
+        <ul>
+          <li>
+            Desenvolvi e mantive sites e sistemas web para clientes da agência
+            com PHP (Laravel e CodeIgniter) e MySQL, além de temas e plugins
+            WordPress sob medida.
+          </li>
+          <li>
+            Construí interfaces responsivas com JavaScript (ES6+), jQuery,
+            AJAX, Bootstrap 4 e Sass/SCSS, incluindo layouts RTL (direita para
+            a esquerda).
+          </li>
+          <li>
+            Apliquei SEO on-page, configurei Google Analytics e publiquei os
+            projetos em produção via cPanel.
+          </li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <p class="job-title">Desenvolvedor Web</p>
+        <p class="job-company">Freelancer / Autônomo</p>
+        <p class="job-location">Sertãozinho, São Paulo, Brasil</p>
+        <p class="job-duration">07/2014 – 11/2018 (4 anos e 5 meses)</p>
+        <ul>
+          <li>
+            Desenvolvimento de projetos variados sob demanda e estudos
+            contínuos de novas tecnologias (PHP, MySQL, WordPress, JavaScript, jQuery, HTML5, CSS3, Bootstrap).
+          </li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <p class="job-title">Desenvolvedor Front-end Júnior</p>
+        <p class="job-company">Ribsite Serviços de internet LTDA</p>
+        <p class="job-location">Sertãozinho, São Paulo, Brasil</p>
+        <p class="job-duration">01/2013 – 06/2014 (1 ano e 6 meses)</p>
+        <ul>
+          <li>
+            Desenvolvi e publiquei sites institucionais e landing pages para
+            empresas locais, convertendo layouts em HTML5 e CSS3 semânticos e
+            compatíveis entre navegadores, com JavaScript e jQuery.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Lista completa de habilidades: vem depois da experiência, para consulta e para o ATS -->
+    <div class="section">
+      <h3>HABILIDADES TÉCNICAS</h3>
+
+      <div class="skills-section">
+        <!-- A stack-alvo (React + Node.js + TypeScript) vem primeiro; o resto vem depois -->
+        <div class="skills-category">
+          <strong>React e Front-end:</strong>
+          React (Hooks, Context API, Suspense, Error Boundaries, Code
+          Splitting), Next.js (App Router, Server Components, Server Actions,
+          SSR, SSG, ISR), Redux Toolkit, React Hook Form + Zod, Tailwind CSS,
+          shadcn/ui, Material UI, Styled-components, Storybook, Design System,
+          Acessibilidade (WCAG), Core Web Vitals, Vite, Webpack
+        </div>
+
+        <div class="skills-category">
+          <strong>Node.js e Back-end:</strong>
+          Node.js, NestJS, Express, APIs RESTful, GraphQL (Apollo),
+          WebSockets/Socket.IO, Prisma, TypeORM, Sequelize, Mongoose, filas
+          (BullMQ, RabbitMQ, AWS SQS), Redis, JWT, OAuth 2.0, RBAC,
+          Swagger/OpenAPI, logging estruturado (Pino, Winston)
+        </div>
+
+        <div class="skills-category">
+          <strong>TypeScript:</strong>
+          TypeScript avançado (Generics, Utility Types, Type Guards,
+          Discriminated Unions), strict mode, tipagem ponta a ponta, Zod,
+          JavaScript (ES6+), ESLint, Prettier, Monorepo (Turborepo, pnpm
+          workspaces)
+        </div>
+
+        <div class="skills-category">
+          <strong>Arquitetura de Software:</strong>
+          Clean Architecture, Arquitetura Hexagonal, Domain-Driven Design
+          (DDD), CQRS, Microsserviços, Monolito Modular, Arquitetura Orientada
+          a Eventos, Mensageria (RabbitMQ, AWS SQS, Pub/Sub), BFF, API Gateway,
+          Webhooks, idempotência, Design Patterns
+        </div>
+
+        <div class="skills-category">
+          <strong>Qualidade de Código e Testes:</strong>
+          SOLID, Clean Code, Code Review, Conventional Commits, Git Flow,
+          Trunk-Based Development, OWASP Top 10, testes unitários, de
+          integração e E2E, TDD, Jest, Vitest, React Testing Library, Cypress,
+          Playwright, Selenium, Supertest, SonarQube, Postman
+        </div>
+
+        <div class="skills-category">
+          <strong>Bancos de Dados:</strong>
+          PostgreSQL, MySQL, MongoDB, Redis, Firestore, Datastore, Modelagem de
+          Dados, Otimização SQL
+        </div>
+
+        <div class="skills-category">
+          <strong>Cloud e DevOps:</strong>
+          AWS (EC2, ECS, Lambda, SQS, S3, RDS), Google Cloud (Cloud Run, Cloud
+          Functions, GKE, Cloud Storage, Cloud Build, Pub/Sub, BigQuery),
+          Docker, Docker Compose, Kubernetes, GitHub Actions, CI/CD, Vercel,
+          Linux, Git
+        </div>
+
+        <div class="skills-category">
+          <strong>Observabilidade e Sustentação:</strong>
+          Grafana, Cloud Logging, Cloud Monitoring, Resposta a Incidentes, War
+          Room
+        </div>
+
+        <div class="skills-category">
+          <strong>Mobile, Desktop e Outras Linguagens:</strong>
+          React Native, Expo, Tauri, Rust (Axum), Python, PHP (Laravel,
+          WordPress), Angular
+        </div>
+
+        <div class="skills-category">
+          <strong>Segurança e Pagamentos:</strong>
+          OAuth 2.0, JWT, PCI-DSS, LGPD, Gateways de Pagamento (PagSeguro,
+          Pagar.me, Iugu, Vindi), Pix, Cobrança Recorrente
+        </div>
+
+        <div class="skills-category">
+          <strong>IA e Dados:</strong>
+          IA Generativa, LLM, Agentes de IA, Ollama, Mistral, ETL, Claude Code,
+          Cursor, GitHub Copilot
+        </div>
+
+        <div class="skills-category">
+          <strong>Metodologias:</strong>
+          Scrum, Kanban, Planejamento de Sprint, refinamento técnico, Jira
+        </div>
+      </div>
+    </div>
+
+    <!-- Seção de habilidades interpessoais: curta; as evidências ficam nas experiências -->
+    <div class="section">
+      <h3>HABILIDADES INTERPESSOAIS (SOFT SKILLS)</h3>
+      <p>
+        Resolução de Problemas sob Pressão (war rooms) · Autonomia e Ownership ·
+        Comunicação e Visão de Negócio · Trabalho em Equipe e Mentoria ·
+        Inteligência Emocional e Escuta Ativa
+      </p>
+    </div>
+
+    <!-- Formação acadêmica: título de seção que os ATS procuram pelo nome -->
+    <div class="section">
+      <h3>FORMAÇÃO ACADÊMICA</h3>
+      <div class="job">
+        <p class="job-title">Curso Técnico em Psicanálise</p>
+        <p class="job-company">Anhanguera</p>
+        <p class="job-location">São Paulo, Brasil</p>
+        <p class="job-duration">Conclusão: 2026</p>
+        <p class="job-tech">
+          Teoria freudiana e lacaniana. Docentes: Prof. Paulo de Tarso e Profa.
+          Camila Siqueira.
+        </p>
+      </div>
+    </div>
+
+    <!-- Idiomas -->
+    <div class="section">
+      <h3>IDIOMAS</h3>
+      <p>
+        <strong>Português:</strong> Nativo · <strong>Inglês:</strong> Técnico
+        (leitura de documentação e escrita)
+      </p>
+    </div>
+
+    <script>
+      // O navegador usa o <title> como nome padrão do PDF; troca só durante a
+      // impressão (botão ou Ctrl+P) e devolve o título de SEO logo depois
+      (function () {
+        var seoTitle = document.title;
+        var pdfName = "Matheus-Takeuchi-Desenvolvedor-Full-Stack";
+        window.addEventListener("beforeprint", function () {
+          document.title = pdfName;
+        });
+        window.addEventListener("afterprint", function () {
+          document.title = seoTitle;
+        });
+      })();
+    </script>
+  </body>
+</html>
